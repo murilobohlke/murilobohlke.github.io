@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff
+}
+
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .pulse-animation {
+    width: 50%;
+    animation: pulse 2.0s linear infinite;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .pulse-animation {
+    width: 20%;
+    animation: pulse 3.0s linear infinite;
+  }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.6);
+    }
+    50% {
+      -webkit-transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(0.6);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.6);
+    }
+    50% {
+      -webkit-transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(0.6);
+    }
+  }
